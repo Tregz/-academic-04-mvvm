@@ -12,6 +12,10 @@ class MainLauncher : Activity() {
         // Testing splash screen
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
-        }, 1000)
+        }, MOCK_DELAY)
+    }
+
+    companion object {
+        private const val MOCK_DELAY = 1000L
     }
 }
